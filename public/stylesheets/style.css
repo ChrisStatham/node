@@ -6,6 +6,8 @@ h1 {
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("/images/hexabump.png");
+  color: #e8e8e8;
 }
 a {
   color: #00b7ff;
