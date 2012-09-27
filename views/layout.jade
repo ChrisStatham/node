@@ -5,8 +5,11 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     div#sidebar 
-      ul
-         li: a(href='/') home
-         li: a(href='/about') about
+      ul#sidebarList
+         li: a(href='/') Home
+         li: a(href='/about') About
+         li: a(href='/asdf') Example 
     div#mainContent
+      div#title
+        h1= title
       block content
