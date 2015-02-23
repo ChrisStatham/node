@@ -10,3 +10,7 @@ exports.index = function(req, res){
 exports.about = function(req, res){
   res.render('about', {title: 'About Chris'});
 };
+
+exports.socialMedia = function(req, res) {
+  res.render('socialMedia', {title : 'Social Media Links'});
+};
