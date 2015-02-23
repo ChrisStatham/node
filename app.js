@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -15,7 +14,7 @@ app.configure(function(){
   app.set('port', process.env.PORT || 80);
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
-  app.use(express.favicon());
+  app.use(express.favicon(__dirname + '/public/images/me.ico'));
   app.use(express.logger('dev'));
   app.use(express.bodyParser());
   app.use(express.methodOverride());
@@ -29,7 +28,6 @@ app.configure('development', function(){
 });
 
 app.get('/', routes.index);
-app.get('/users', user.list);
 app.get('/about',routes.about);
 app.get('/socialMedia',routes.socialMedia);
 
