@@ -18,9 +18,9 @@ body {
   list-style-type: none;
   font-size: 18px;
 }
-#sidebarList.a {
+#sidebarList a {
   display: block;
-  width: 60px;
+  margin: 10px;
   text-decoration: none;
 }
 a:link {
@@ -40,9 +40,14 @@ a:hover {
 h1 {
   padding: 10px;
 }
+#socialMain ul {
+  list-style-type: none;
+}
+#socialMain ul li {
+  margin: 0.5em;
+}
 #footer {
-  height: 60px;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
+  width: 150px;
+  margin: 10px;
+  diplay: block;
 }
